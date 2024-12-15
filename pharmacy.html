@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEEZ LANKA HOSPITAL</title>
+    <link rel="stylesheet" href="pharmacy.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <img src="LOGO/LO2.png" alt="Hospital Logo">
+        </div>
+        <h1 class="hospital-name">SHEEZ LANKA HOSPITAL</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="doctors.html">DOCTORS</a></li>
+            <li><a href="CONSULTING RESERVATION.html">CONSULTING RESERVATION</a></li>
+            <li><a href="pharmacy.html">PHARMACY</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="categories">
+            <h2>Select Medicines</h2>
+
+            <!--------------------- Analgesics Section --------------------->
+            <div class="category">
+                <h3>Analgesics</h3>
+                <div class="medicine">
+                    <img src="Analgesics/Paracetamol.jpg" alt="Paracetamol">
+                    <label for="1"><p>Paracetamol ($10)</p></label>
+                    <div class="actions">
+                        <input type="number" id="1" class="quantity" value="1" min="1" data-name="Paracetamol">
+                        <button class="add-to-cart" data-name="Paracetamol" data-price="10">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Analgesics/Ibuprofen.jpeg" alt="Ibuprofen">
+                    <p>Ibuprofen ($12)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Ibuprofen">
+                        <button class="add-to-cart" data-name="Ibuprofen" data-price="12">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Analgesics/Aspirin.jpeg" alt="Aspirin">
+                    <p>Aspirin ($8)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Aspirin">
+                        <button class="add-to-cart" data-name="Aspirin" data-price="8">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Analgesics/Naproxen.jpeg" alt="Naproxen">
+                    <p>Naproxen ($14)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Naproxen">
+                        <button class="add-to-cart" data-name="Naproxen" data-price="14">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Analgesics/Diclofenac.jpeg" alt="Diclofenac">
+                    <p>Diclofenac ($11)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Diclofenac">
+                        <button class="add-to-cart" data-name="Diclofenac" data-price="11">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Analgesics/Ketorolac.jpeg" alt="Ketorolac">
+                    <p>Ketorolac ($13)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Ketorolac">
+                        <button class="add-to-cart" data-name="Ketorolac" data-price="13">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!------------------- Antibiotics Section ----------------->
+            <div class="category">
+                <h3>Antibiotics</h3>
+                <div class="medicine">
+                    <img src="Antibiotics/Amoxicillin.jpeg" alt="Amoxicillin">
+                    <p>Amoxicillin ($15)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Amoxicillin">
+                        <button class="add-to-cart" data-name="Amoxicillin" data-price="15">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antibiotics/Ciprofloxacin.jpeg" alt="Ciprofloxacin">
+                    <p>Ciprofloxacin ($18)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Ciprofloxacin">
+                        <button class="add-to-cart" data-name="Ciprofloxacin" data-price="18">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antibiotics/Doxycycline.jpeg" alt="Doxycycline">
+                    <p>Doxycycline ($16)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Doxycycline">
+                        <button class="add-to-cart" data-name="Doxycycline" data-price="16">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antibiotics/Azithromycin.jpeg" alt="Azithromycin">
+                    <p>Azithromycin ($17)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Azithromycin">
+                        <button class="add-to-cart" data-name="Azithromycin" data-price="17">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antibiotics/Clindamycin.jpeg" alt="Clindamycin">
+                    <p>Clindamycin ($19)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Clindamycin">
+                        <button class="add-to-cart" data-name="Clindamycin" data-price="19">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antibiotics/Metronidazole.jpeg" alt="Metronidazole">
+                    <p>Metronidazole ($14)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Metronidazole">
+                        <button class="add-to-cart" data-name="Metronidazole" data-price="14">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--------------- Antidepressants Section ------------------->
+            <div class="category">
+                <h3>Antidepressants</h3>
+                <div class="medicine">
+                    <img src="Antidepressants/Fluoxetine.jpeg" alt="Fluoxetine">
+                    <p>Fluoxetine ($20)</p><div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Fluoxetine">
+                        <button class="add-to-cart" data-name="Fluoxetine" data-price="20">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antidepressants/Sertraline.jpeg" alt="Sertraline">
+                    <p>Sertraline ($22)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Sertraline">
+                        <button class="add-to-cart" data-name="Sertraline" data-price="22">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antidepressants/Amitriptyline.jpeg" alt="Amitriptyline">
+                    <p>Amitriptyline ($18)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Amitriptyline">
+                        <button class="add-to-cart" data-name="Amitriptyline" data-price="18">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antidepressants/Escitalopram.jpeg" alt="Escitalopram">
+                    <p>Escitalopram ($21)</p>
+                    <div class="actions">
+                        <label for="Escitalopram"></label>
+                        <input type="number" id="Escitalopram" class="quantity" value="1" min="1" data-name="Escitalopram">
+                        <button class="add-to-cart" data-name="Escitalopram" data-price="21">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antidepressants/Venlafaxine.jpeg" alt="Venlafaxine">
+                    <p>Venlafaxine ($19)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Venlafaxine">
+                        <button class="add-to-cart" data-name="Venlafaxine" data-price="19">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antidepressants/Mirtazapine.jpeg" alt="Mirtazapine">
+                    <p>Mirtazapine ($23)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Mirtazapine">
+                        <button class="add-to-cart" data-name="Mirtazapine" data-price="13">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-------------- Antihistamines Section ---------------->
+            <div class="category">
+                <h3>Antihistamines</h3>
+                <div class="medicine">
+                    <img src="Antihistamines/Loratadine.jpeg" alt="Loratadine">
+                    <p>Loratadine ($8)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Loratadine">
+                        <button class="add-to-cart" data-name="Loratadine" data-price="8">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihistamines/Cetirizine.jpeg" alt="Cetirizine">
+                    <p>Cetirizine ($7)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Cetirizine">
+                        <button class="add-to-cart" data-name="Cetirizine" data-price="7">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihistamines/Fexofenadine.jpeg" alt="Fexofenadine">
+                    <p>Fexofenadine ($9)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Fexofenadine">
+                        <button class="add-to-cart" data-name="Fexofenadine" data-price="9">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihistamines/Diphenhydramine.jpeg" alt="Diphenhydramine">
+                    <p>Diphenhydramine ($6)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Diphenhydramine">
+                        <button class="add-to-cart" data-name="Diphenhydramine" data-price="6">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!----------------- Antihypertensives Section ----------------->
+            <div class="category">
+                <h3>Antihypertensives</h3>
+                <div class="medicine">
+                    <img src="Antihypertensives/Lisinopril.jpeg" alt="Lisinopril">
+                    <p>Lisinopril ($12)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Lisinopril">
+                        <button class="add-to-cart" data-name="Lisinopril" data-price="12">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihypertensives/Amlodipine.jpeg" alt="Amlodipine">
+                    <p>Amlodipine ($14)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Amlodipine">
+                        <button class="add-to-cart" data-name="Amlodipine" data-price="14">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihypertensives/Losartan.jpeg" alt="Losartan">
+                    <p>Losartan ($13)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Losartan">
+                        <button class="add-to-cart" data-name="Losartan" data-price="13">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihypertensives/Metoprolol.jpeg" alt="Metoprolol">
+                    <p>Metoprolol ($15)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Metoprolol">
+                        <button class="add-to-cart" data-name="Metoprolol" data-price="15">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihypertensives/Valsartan.jpeg" alt="Valsartan">
+                    <p>Valsartan ($17)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Valsartan">
+                        <button class="add-to-cart" data-name="Valsartan" data-price="17">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="medicine">
+                    <img src="Antihypertensives/Hydrochlorothiazide.jpeg" alt="Hydrochlorothiazide">
+                    <p>Hydrochlorothiazide ($11)</p>
+                    <div class="actions">
+                        <input type="number" class="quantity" value="1" min="1" data-name="Hydrochlorothiazide">
+                        <button class="add-to-cart" data-name="Hydrochlorothiazide" data-price="11">🛒Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+            </table>
+            <p><strong>Total:</strong> $<span id="total-price">0</span></p>
+            <button id="checkout" >PAY NOW</button>
+            <button id="add-to-favorites">Save to Favorites</button>
+            <button id="apply-favorites">Apply Favorites</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About SHEEZ LANKA HOSPITAL</h2>
+                <p>Providing the best healthcare services with top-notch facilities and experienced doctors. Your health is our priority.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="register.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: sheezlankahospital@gmail.com</p>
+                <p>Phone: +94 712 775 985</p>
+                <p>Address: 2A Main St, Colombo 7, Sri Lanka</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 SHEEZ LANKA HOSPITAL | Designed by Senuth
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

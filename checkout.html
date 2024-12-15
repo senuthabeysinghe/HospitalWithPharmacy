@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAY NOW</title>
+    <link rel="stylesheet" href="pharmacy.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <img src="LOGO/LO2.png" alt="Hospital Logo">
+        </div>
+        <h1 class="hospital-name">SHEEZ LANKA HOSPITAL</h1>
+    </header>
+
+    <main>
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="summary-items"></tbody>
+            </table>
+            <p><strong>Total:</strong> $<span id="summary-total">0</span></p>
+        </section>
+
+        <section>
+            <h2>Enter Your Details</h2>
+            <form id="checkout-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" rows="3" required></textarea>
+
+                <label for="payment">Payment Method:</label>
+                <select id="payment" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+
+                <!-- Credit Card Form -->
+                <div id="credit-card-section" class="credit-card-section">
+                    <h3>Credit Card Information</h3>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" maxlength="16" required>
+
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="month" id="expiry-date" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" maxlength="3" required>
+                </div>
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About SHEEZ LANKA HOSPITAL</h2>
+                <p>Providing the best healthcare services with top-notch facilities and experienced doctors. Your health is our priority.</p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: sheezlankahospital@gmail.com</p>
+                <p>Phone: +94 712 775 985</p>
+                <p>Address: 2A Main St, Colombo 7, Sri Lanka</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 SHEEZ LANKA HOSPITAL | Designed by Senuth
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

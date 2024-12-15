@@ -1,0 +1,387 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo img {
+    height: 70px; 
+    width: auto;
+    margin-left: 1px; 
+}
+
+/* Header */
+.header {
+    background-color: #576ff5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.hospital-name {
+    font-size: 80px;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #110202;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    width: 50%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.form-table input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.payment-options label {
+    font-size: 16px;
+}
+
+.payment-options input {
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #576ff5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .hospital-name {
+        font-size: 40px;
+    }
+
+    /* Navigation Bar */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .navbar ul li a {
+        padding: 15px;
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 10px;
+        display: block;
+    }
+
+    .form-section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-table input {
+        width: calc(100% - 22px); /* Adjust for padding */
+    }
+
+    .payment-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-options label {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+/* Tablets (min-width: 601px and max-width: 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    /* Header */
+    .hospital-name {
+        font-size: 60px;
+    }
+
+    /* Navigation Bar */
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar ul li {
+        margin: 0 5px;
+    }
+
+    .navbar ul li a {
+        padding: 15px 20px;
+    }
+
+    /* Main Content */
+    .main-content {
+        padding: 15px;
+    }
+
+    .form-section {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .form-table input {
+        width: calc(100% - 22px); /* Adjust for padding */
+    }
+
+    .payment-options {
+        flex-direction: row;
+    }
+
+    .payment-options label {
+        font-size: 16px;
+    }
+
+    .submit-button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Mobile inquiries start */
+@media (max-width: 768px) {
+  body {
+      padding: 10px; 
+  }
+
+  h1, h2, p {
+      font-size: 16px; 
+  }
+
+  .navbar ul {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .navbar ul li {
+      margin-bottom: 10px; 
+  }
+
+  .navbar ul li a {
+      padding: 10px 20px; 
+  }
+
+  /* Header adjustments */
+  .hospital-name {
+      font-size: 40px; 
+  }
+
+  .logo img {
+      height: 50px; 
+  }
+
+  /* Main content section adjustments */
+  .featured-section {
+      flex-direction: column; 
+  }
+
+  .featured-section img {
+      width: 100%; 
+      height: auto;
+  }
+
+  .grid-section {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .grid-section img {
+      width: 100%; 
+      max-width: 100%; 
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+      flex-direction: column; 
+      text-align: center;
+  }
+
+  .footer-section {
+      margin-bottom: 20px;
+  }
+}
