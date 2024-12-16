@@ -76,7 +76,7 @@ main {
 }
 
 h2 {
-    color: #333;
+    color: #fcf9f9;
     font-size: 24px;
 }
 
@@ -158,7 +158,7 @@ tfoot td {
 
 /* Footer */
 .footer {
-    background-color: #576ff5;
+    background-color: #041570;
     color: white;
     padding: 20px;
     text-align: center;
@@ -194,7 +194,7 @@ tfoot td {
   }
   
   .footer-section ul li a {
-    color: #ffcc00;
+    color: #eed46b;
     text-decoration: none;
   }
   
